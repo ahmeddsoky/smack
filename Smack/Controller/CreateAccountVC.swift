@@ -33,18 +33,13 @@ class CreateAccountVC: UIViewController {
         }
     }
     
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
        
     }
-// action
     
+// action
     @IBAction func createAccountBtnPressed(_ sender: Any) {
         // spinner
         spinner.isHidden = false

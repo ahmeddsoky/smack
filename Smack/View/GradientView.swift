@@ -19,16 +19,15 @@ class GradientView: UIView {
         }
     }
     
-    
     @IBInspectable var bottomColor:UIColor = #colorLiteral(red: 0.1725490196, green: 0.831372549, blue: 0.8470588235, alpha: 1) {
         didSet{
             setNeedsLayout()
         }
-        
     }
+    
     // to design layer
    override func layoutSubviews() {
-        // instance gradient
+    // instance gradient
     let gradientLayer = CAGradientLayer()
     // Chose Color
     gradientLayer.colors = [topColor.cgColor,bottomColor.cgColor]
@@ -40,24 +39,6 @@ class GradientView: UIView {
     gradientLayer.frame = self.bounds
     //insert gradient
     self.layer.insertSublayer(gradientLayer, at: 0)
-    
-    
-    
-    
-    
+  
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
 }
