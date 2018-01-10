@@ -9,7 +9,6 @@
 import UIKit
 import SocketIO
 
-
 class SocketService: NSObject {
     // instance
     static let instance = SocketService()

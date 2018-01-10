@@ -45,9 +45,6 @@ class ChannelVC: UIViewController, UITableViewDataSource,UITableViewDelegate {
     }
 
     
-    
-    
-    
     // to show data
     override func viewDidAppear(_ animated: Bool) {
         setupUserInfo()
